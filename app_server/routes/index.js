@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var ctrlBlogs = require('../controllers/blog');
-var ctrlOthers = require('../controllers/others');
+var ctrlOthers = require('../controllers/home');
 
 /* Location pages */
 router.get('/', ctrlOthers.home);
