@@ -5,5 +5,5 @@ module.exports.blogList = function(req, res) {
 
 /* GET 'Add review' page */
 module.exports.addBlog = function(req, res){
-    res.render('add-blog', { title : 'Blog Add'});
+    res.render('add-blog', { title : 'Add Blog'});
 };
