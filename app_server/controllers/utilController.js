@@ -2,7 +2,7 @@ const { MongoClient, ObjectId } = require('mongodb');
 const debug = require('debug')('app:utilController');
 
 exports.setupDB = async function () {
-  const url = "mongodb+srv://emilyyr55:Maksim@cluster0.ynqrqro.mongodb.net/?retryWrites=true&w=majority";
+  const url = "mongodb://localhost/blogs";
   debug(`attempting to connect to database at ${url}`);
   const dbName = 'blogs';
   try {
