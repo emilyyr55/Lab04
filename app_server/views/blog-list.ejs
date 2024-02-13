@@ -11,9 +11,19 @@
       
       <%- include('./partials/nav') %>
       <p></p>
-      <h1><%= title %></h1>
-      <p class="font-italic">This page is currently under construction... Come back soon!</p>
-    
+      
+      <%  let blog1 = {}; %>
+      <% if (blogs.length == 0) { %>
+        <h4> No blogs to display. Add one above.</h4>
+      
+      <%}else {%>
+        <% for(let i = 0; i < blogs.length; i++) { %>
+          <% blog1 = blogs[i] %>
+          <%- include('./partials/showblog', {blog: blog1}) %>
+        <% } %>
+      <% } %>
+
+
     </div>
   
   </body>
