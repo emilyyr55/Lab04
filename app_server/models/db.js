@@ -1,6 +1,6 @@
 var mongoose = require( 'mongoose' );
 
-var dbURI = 'mongodb://localhost/blogs';
+var dbURI = 'mongodb://blogs:Maksim@localhost/blogs';
 mongoose.connect(dbURI);
 
 mongoose.connection.on('connected', function () {
