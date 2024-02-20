@@ -11,10 +11,19 @@
   
       <%- include('./partials/nav') %>
       <p></p>
-      <h1><%= title %></h1>
-      <p class="font-italic">The adding blog feature is currently under construction... Please come back soon!</p>
-  
-    </div>
+      <div class="card" style="width: 50%">
+        <form method="post" action="/blog-add/" style="padding: 20px">
+            <div class="form-group">
+                <label for="blogTitle" class="text-primary">Blog Title</label>
+                <input class="form-control" id="blogTitle" name="blogTitle"></textarea>
+
+                <label for="blogText" class="text-primary">Blog Text</label>
+                <textarea class="form-control" id="blogText" rows="3" name="blogText"></textarea>
+            
+            </div>
+                <input type="submit" class="btn btn-primary" value="Add Task">
+        </form>
+        </div>
   
   </body>
 </html>

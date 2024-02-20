@@ -11,8 +11,19 @@
   
       <%- include('./partials/nav') %>
       <p></p>
-      <h1><%= title %></h1>
-      <p class="font-italic">The editing blog feature is currently under construction... Please come back soon!</p>
+      <div class="card" style="width: 50%">
+        <form method="post" action="/blog-edit/<%=blog._id%>" style="padding: 20px">
+            <div class="form-group">
+                <label for="blogTitle" class="text-primary">Blog Title</label>
+                <input class="form-control" id="blogTitle" name="blogTitle" value="<%=blog.blogTitle%>"></textarea>
+
+                <label for="blogText" class="text-primary">Blog Text</label>
+                <input class="form-control" id="blogText" name="blogText" value="<%=blog.blogText%>"></textarea>
+            
+            </div>
+                <input type="submit" class="btn btn-primary" value="Save Blog">
+        </form>
+        </div>
   
     </div>
   

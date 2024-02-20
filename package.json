@@ -1,5 +1,5 @@
 {
-  "name": "lab02",
+  "name": "lab04",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -13,7 +13,8 @@
     "express": "^4.18.2",
     "http-errors": "~1.6.3",
     "mongodb": "^6.3.0",
-    "mongoose": "^8.1.2",
-    "morgan": "~1.9.1"
+    "mongoose": "^6.10.0",
+    "morgan": "~1.9.1",
+    "request": "^2.88.2"
   }
 }
